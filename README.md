@@ -1,3 +1,3 @@
 # Proyecto_Demo
 
-## Curso_de_Platsi
+## Curso_de_Platzi

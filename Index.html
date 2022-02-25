@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que paso Raza</title>
+    <title>Calculo de Area y Perimentro</title>
 </head>
 <body>
-    <h1>Hello WORK</h1>
-    <article>Tlasojkamati</article>
-    <script src="lojic.js"></script>
+    <header>
+        <h1>Calcular de Cuadrado</h1>
+        <form>
+            <label for="inputCuadrado">
+                Escribe el lado del cuadrado.
+            </label>
+            <input id="inputCuadrado" type="number"/>
+            <button type="button" onclick="perimetroCuadrado()">Calcular Perimetro</button>
+            <button type="button" onclick="areaCuadrado()">Calcular Área</button>
+        </form>
+    </header>
+    <header>
+        <h1>Calcular de Triagulo Isosceles</h1>
+        <form>
+            <label for="inputTrianguloLados">
+                Escribe la medida de los dos lados iguales del triangulo.
+            </label>
+            <input id="inputTrianguloLados" type="number"/>
+            <label for="inputTrianguloBase">
+                Escribe la medida de la base del triangulo.
+            </label>
+            <input id="inputTrianguloBase" type="number"/>
+            <button type="button" onclick="altura()">Calcular la Altura</button>
+        </form>
+    </header>
+    <script src="./lojic.js"></script>
 </body>
 </html>

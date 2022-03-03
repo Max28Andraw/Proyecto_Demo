@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Descuentos.css">
     <title>Descuentos</title>
 </head>
 <body>
+    <section>
+        <header id="titulo">
+            <h1>Calculadora de Decuentos</h1>
+            <p>Esta calculadora es para saber el precio a pagar aplicando el descuento</p>
+        </header>
+    </section>
+    <section>
+        <form>
+            <label for="inputPrecio">Coloca el precio del producto:</label>
+            <input id="inputPrecio" type="number">
+
+            <label for="inputDescuento">Coloca el porcentage del descuento</label>
+            <input id="inputDescuento" type="text">
+            <button type="button" onclick="descuentoCupon()">Calcular</button>
+
+            <p id="Resultado"></p>
+
+        </form>
+    </section>
+    
     <script src="./Descuentos.js"></script>
-    <h1>Programa de Decuentos</h1>
 </body>
 </html>

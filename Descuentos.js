@@ -23,7 +23,7 @@ function buttonDescuento(){//Esta funcion es para calcular el costo a pagar apli
     resultado.innerText = "El Precio a pagar es: $" + precioDescuento;
 
     const resultado2 = document.getElementById("Resultado2");
-    resultado2.innerText = "Ahorraste $" + ahorro;
+    resultado2.innerText = "Ahorraste: $" + ahorro;
 }
 
 

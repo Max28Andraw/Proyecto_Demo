@@ -20,7 +20,10 @@ function buttonDescuento(){//Esta funcion es para calcular el costo a pagar apli
     const ahorro = ahorroDescuento(precio, descuento);
 
     const resultado = document.getElementById("Resultado");
-    resultado.innerText = "El Precio a pagar es: $" + precioDescuento + " Ahorraste $" + ahorro;
+    resultado.innerText = "El Precio a pagar es: $" + precioDescuento;
+
+    const resultado2 = document.getElementById("Resultado2");
+    resultado2.innerText = "Ahorraste $" + ahorro;
 }
 
 
@@ -42,7 +45,10 @@ function descuentoCupon(){ //Esta funconcion aplica un descuento con el cupon qu
         const ahorro = ahorroDescuento(precio, descuento);
 
         const resultado = document.getElementById("Resultado");
-        resultado.innerText = "El Precio a pagar es: $" + precioDescuento + " Ahorraste $" + ahorro;
+        resultado.innerText = "El Precio a pagar es: $" + precioDescuento;
+
+        const resultado2 = document.getElementById("Resultado2");
+        resultado2.innerText = "Ahorraste $" + ahorro;
     }else{
         alert("El cupon no existe");
     }

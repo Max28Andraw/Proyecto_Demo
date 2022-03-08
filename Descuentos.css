@@ -1,23 +1,105 @@
+body {
+    background-color: azure;
+}
 section {
     width: 100%;
+    height: 100%;
 }
 
 header {
     box-sizing: border-box;
-    margin: 0px;
-    margin-bottom: 15px;
-    border: 2px solid;
-    border-radius: 8px;
-    background-color: rgba(155, 11, 11, 0.15);
+    margin: 0px 0px 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+.descripcion {
+    margin: 0px;
+    text-align: center;
+    width: 400px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+.calculadora {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
 form {
     display: flex;
-    height: 200px;
+    width: 700px;
+    height: 400px;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(251, 231, 187, 0.781);
+}
+.precio {
+    font-size: 30px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+}
+.input_precio {
+    width: 130px;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: 10px;
+}
+
+.descuento {
+    font-size: 30px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+}
+.input_descuento {
+    width: 130px;
+    height: 20px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+}
+.button_descuento {
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: rgba(184, 31, 64, 0.774);
+    border: 0cm;
+    width: 150px;
+    height: 30px; 
+    margin: 20px 0px 5px 0px;   
+    border-radius: 10px;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+.resultado {
+    margin: 15px ;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resultado2 {
+    margin: 10px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

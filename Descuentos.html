@@ -11,20 +11,20 @@
     <section>
         <header id="titulo">
             <h1>Calculadora de Decuentos</h1>
-            <p>Esta calculadora es para saber el precio a pagar aplicando el descuento</p>
+            <p class="descripcion">Esta calculadora es para saber el precio a pagar aplicando el descuento</p>
         </header>
     </section>
-    <section>
+    <section class="calculadora">
         <form>
-            <label for="inputPrecio">Coloca el precio del producto:</label>
-            <input id="inputPrecio" type="number">
+            <label class="precio" for="inputPrecio">Coloca el precio del producto:</label>
+            <input class="input_precio" id="inputPrecio" type="number" placeholder="Precio">
 
-            <label for="inputDescuento">Coloca el porcentage del descuento</label>
-            <input id="inputDescuento" type="text">
-            <button type="button" onclick="buttonDescuento()">Calcular</button>
+            <label class="descuento" for="inputDescuento">Coloca el porcentage del descuento:</label>
+            <input class="input_descuento" id="inputDescuento" type="number" placeholder="Descuento">
+            <button class="button_descuento" type="button" onclick="buttonDescuento()">Calcular</button>
 
-            <p id="Resultado"></p>
-
+            <p class="resultado" id="Resultado"></p>
+            <p class="resultado2" id="Resultado2"></p>
         </form>
     </section>
     

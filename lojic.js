@@ -5,11 +5,19 @@ function valor(){
 
 function perimetroCuadrado (){
     const perimetro = valor() * 4;
-    alert(perimetro + " cm.");
+    const resul = document.getElementById("ResultadoCuadrado");
+    const resul2 = document.getElementById("ResultadoCuadrado2");
+
+    resul.innerText = "El Perimetro es :";
+    resul2.innerText = perimetro + " cm.";
 }
 function areaCuadrado (){
     const area = valor() * valor();
-    alert(area + " cm^2.");
+    const resul = document.getElementById("ResultadoCuadrado");
+    const resul2 = document.getElementById("ResultadoCuadrado2");
+
+    resul.innerText = "El Área es :";
+    resul2.innerText = area + " cm^2.";
 }
 
 function altura(){
@@ -18,5 +26,10 @@ function altura(){
     const altura = document.getElementById("inputTrianguloLados");
     const a = altura.value;
     const c = (Math.sqrt((a * a) - ((b * b) / 4)));
-    alert(c + " cm");
+
+    const resul = document.getElementById("ResultadoTriangulo");
+    const resul2 = document.getElementById("ResultadoTriangulo2");
+
+    resul.innerText = "La Altura es :";
+    resul2.innerText = c + " cm^2.";
 }

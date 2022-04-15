@@ -8,11 +8,29 @@
     <title>Descuentos</title>
 </head>
 <body>
+    <div class="menu">
+        <a href="./index.html">
+            <img class="iconos animacion" src="./casa.png" alt="">
+        </a>
+        <a href="./figurasGeometricas.html">
+            <img class="iconos animacion" src="./calculadora-50.png" alt="">
+        </a>
+        <a href="./promedio.html">
+            <img class="iconos animacion" src="./porcentaje-50.png" alt="">
+        </a>
+        <a href="./salarios.html">
+            <img class="iconos animacion" src="./salario.png" alt="">
+        </a>    
+    </div>
+    <nav class="presentacion">
+        <img src="./descuento-50.png" alt="">
+        <h1>Calculadora de Decuentos</h1>
+        <img src="./descuento-50.png" alt="">
+    </nav>
     <section>
         <header id="titulo">
-            <h1>Calculadora de Decuentos</h1>
-            <p class="descripcion">Esta calculadora es para saber el precio a pagar aplicando el descuento</p>
-        </header>
+            <p class="descripcion">Esta calculadora es para saber el precio a pagar aplicando el descuento.</p>
+        </header>    
     </section>
     <section class="calculadora">
         <form>
@@ -21,10 +39,19 @@
 
             <label class="descuento" for="inputDescuento">Coloca el porcentage del descuento:</label>
             <input class="input_descuento" id="inputDescuento" type="number" placeholder="Descuento">
-            <button class="button_descuento" type="button" onclick="buttonDescuento()">Calcular</button>
+            <button class="button_descuento animacion" type="button" onclick="buttonDescuento()">Calcular</button>
 
-            <p class="resultado" id="Resultado"></p>
-            <p class="resultado2" id="Resultado2"></p>
+            <div class="content_respuestas">
+                <div class="content_respuesta">
+                    <p class="resultado" id="Resultado"></p>
+                    <p class="resultado2" id="Resultado2"></p>
+                </div>
+                <div class="content_ahorro">
+                    <p class="ahorro" id="ahorro"></p>
+                    <p class="ahorro2" id="ahorro2"></p>
+                </div>               
+            </div>
+            
         </form>
     </section>
     

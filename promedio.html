@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./promedio.css">
     <title>Promedio</title>
 </head>
 <body>
     <script src="./promedio.js"></script>
-    <h1>Welcome</h1>
+    <div class="menu">
+        <a href="./index.html">
+            <img class="iconos animacion" src="./casa.png" alt="">
+        </a>
+        <a href="./figurasGeometricas.html">
+            <img class="iconos animacion" src="./calculadora-50.png" alt="">
+        </a>
+        <a href="./Descuentos.html">
+            <img class="iconos animacion" src="./descuento-50.png" alt="">
+        </a>
+        <a href="./salarios.html">
+            <img class="iconos animacion" src="./salario.png" alt="">
+        </a>    
+    </div>
+    <nav class="presentacion">
+        <img src="./porcentaje-50.png" alt="">
+        <h1>Calculadora de Decuentos</h1>
+        <img src="./porcentaje-50.png" alt="">
+    </nav>
+    <section>
+        <header id="titulo">
+            <p class="descripcion">Esta calculadora para sacar el promedio, la media y la moda, con la lista de numeros que coloques.</p>
+        </header>    
+    </section>
+
+    <section class="calculadora">
+        <form>
+            <label class="promedio" for="inputPromedio">Coloca la lista de números y oprime agregar  :</label>
+            <input class="input_Promedio" id="inputPromedio" type="number" placeholder="Lista">
+            <button class="button_Promedio animacion" type="button" onclick="pro()">Agregar</button>
+            <button class="button_Promedio animacion" type="button" onclick="calcularPromedio()">Calcular</button>
+
+            <div class="content_respuestas">
+                              
+            </div>
+            
+        </form>
+    </section>
 </body>
 </html>

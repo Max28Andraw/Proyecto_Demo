@@ -1,0 +1,234 @@
+body{
+    background-color: #121f3d;
+    margin: 0;
+}
+@keyframes wobble {
+    0% {transform: translateX(0%);}
+    15% {transform: translateX(-25%) rotate(-5deg);}
+    30% {transform: translateX(20%) rotate(3deg);}
+    45% {transform: translateX(-15%) rotate(-3deg);}
+    60% {transform: translateX(10%) rotate(2deg);}
+    75% {transform: translateX(-5%) rotate(-1deg);}
+    100% {transform: translateX(0%);}
+}
+.animacion {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: initial;    
+    animation-duration: 1s; 
+}
+.presentacion {
+    background-color: #0c1633;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 80px;
+    box-sizing: border-box;
+}
+.presentacion h1 {
+    color: aliceblue;
+    margin: 0px;
+    font-size: 45px;
+    font-family: system-ui;
+}
+/* .presentacion img {
+    width: 75px;
+    height: 75px;
+    margin: 0px 15px;
+} */
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    background-color: #0c1633;
+    position: fixed;
+    top: 0;
+}
+.menu a{
+    /* margin: 20px 10px; */
+    text-decoration: none;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: initial;    
+    animation-duration: 1s; 
+}
+.menu a:hover {
+    background-color: #33b1ffc5;
+    animation-name: pulse;
+    
+}
+.menu a:hover .iconos{
+    animation-name: pulse;
+    transform: scale(1.2);
+    transition: 400ms;
+}
+.iconos{
+    margin: 30px 15px;
+    width: 40px;
+    height: 40px;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: initial;    
+    animation-duration: 1s; 
+}
+
+.conteint-Caluladoras {
+    display: flex;
+    margin-left: 70px;
+    padding: 10px;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+/* Personalizacion de la calculadora del cuadrado */
+.calcu-Caudrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 450px;
+    background-color: #0c1633;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+.calcu-Caudrado h1{
+    color: rgb(228, 228, 228);
+    font-family: system-ui;
+    font-size: 35px;
+    margin: 0px 0px 30px 0px;
+}
+.forCuadrado{
+    display: flex;
+    align-items: baseline;
+    margin: 20px;
+}
+.instruc{
+    color: #33b1ffc5;
+    font-family: system-ui;
+    font-size: 25px;
+}
+.inputCuadrado {
+    background-color: #61dff059;
+    color: aliceblue;
+    text-align: center;
+    border: 0px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+.animacion {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: initial;    
+    animation-duration: 1s; 
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+.buttonCuadrado {
+    background-color: #0a8ecd;
+    color: aliceblue;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    margin: 5px 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buttonCuadrado:hover {
+    animation-name: pulse;
+}
+.secRespuesta {
+    display: flex;
+    margin: 10px;
+    height: 50px;
+}
+.respuesta {
+    font-size: 25px;
+    color: #0a8ecd;
+    font-family: system-ui;
+    margin: 10px;
+}
+.respuesta_final {
+    color: aquamarine;
+    font-size: 25px;
+    font-family: system-ui;
+    margin: 10px;
+}
+
+/* Personalizacion del Triangulo */
+.calcu-Triangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;    
+    height: 450px;
+    background-color: #0c1633;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+.calcu-Triangulo h1{
+    color: rgb(228, 228, 228);
+    font-family: system-ui;
+    font-size: 35px;
+    margin: 0px 0px 30px 0px;
+}
+.forTriangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instrucTrian {
+    color: #33b1ffc5;
+    font-family: system-ui;
+    font-size: 25px;
+    margin: 10px;
+}
+.inputTriangulo {
+    background-color: #61dff059;
+    color: aliceblue;
+    text-align: center;
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 9px;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+.buttonTriangulo {
+    background-color: #0a8ecd;
+    color: aliceblue;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    margin: 5px 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buttonTriangulo:hover {
+    animation-name: pulse;
+}
+
+/* Adaptacion */
+
+@media only screen and (max-width: 1300px){
+    .conteint-Caluladoras{
+        flex-direction: column;
+    }
+}

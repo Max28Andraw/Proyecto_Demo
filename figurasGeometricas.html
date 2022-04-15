@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <title>Calculo de Area y Perimentro</title>
+</head>
+<body>
+    <script src="./lojic.js"></script>
+    <div class="menu">
+        <a href="./index.html">
+            <img class="iconos animacion" src="./casa.png" alt="">
+        </a>
+        <a href="./Descuentos.html">
+            <img class="iconos animacion" src="./descuento-50.png" alt="">
+        </a>
+        <a href="./promedio.html">
+            <img class="iconos animacion" src="./porcentaje-50.png" alt="">
+        </a>
+        <a href="./salarios.html">
+            <img class="iconos animacion" src="./salario.png" alt="">
+        </a>    
+    </div>
+    <nav class="presentacion">
+        <img src="./calculadora-50.png" alt="">
+        <h1>Calculadora de Figuras Geometricas</h1>
+        <img src="./calculadora-50.png" alt="">
+    </nav>
+    
+    <section class="conteint-Caluladoras">
+        <header class="calcu-Caudrado">
+            <h1>Calcular de Cuadrado</h1>
+            <form class="forCuadrado">
+                <label class="instruc" for="inputCuadrado">
+                    Escribe el lado del cuadrado :
+                </label>
+                <input class="inputCuadrado" id="inputCuadrado" type="number"/>
+                <button class="buttonCuadrado animacion" type="button" onclick="perimetroCuadrado()">Perimetro</button>
+                <button class="buttonCuadrado animacion" type="button" onclick="areaCuadrado()">Área</button>
+            </form>
+            <div class="secRespuesta">
+                <p class="respuesta" id="ResultadoCuadrado"></p>
+                <p class="respuesta_final" id="ResultadoCuadrado2"></p>
+            </div>
+            
+        </header>
+        <header class="calcu-Triangulo">
+            <h1>Calcular de Triagulo Isosceles</h1>
+            <form class="forTriangulo">
+                <label class="instrucTrian" for="inputTrianguloLados">
+                    Escribe la medida de los dos lados iguales del triangulo.
+                </label>
+                <input class="inputTriangulo" id="inputTrianguloLados" type="number"/>
+                <label class="instrucTrian" for="inputTrianguloBase">
+                    Escribe la medida de la base del triangulo.
+                </label>
+                <input class="inputTriangulo" id="inputTrianguloBase" type="number"/>
+                <button class="buttonTriangulo animacion" type="button" onclick="altura()">Calcular la Altura</button>
+            </form>
+            <div class="secRespuesta">
+                <p class="respuesta" id="ResultadoTriangulo"></p>
+                <p class="respuesta_final" id="ResultadoTriangulo2"></p>
+            </div>
+        </header>
+    </section>    
+</body>
+</html>

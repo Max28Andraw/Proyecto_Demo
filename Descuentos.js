@@ -20,10 +20,14 @@ function buttonDescuento(){//Esta funcion es para calcular el costo a pagar apli
     const ahorro = ahorroDescuento(precio, descuento);
 
     const resultado = document.getElementById("Resultado");
-    resultado.innerText = "El Precio a pagar es: $" + precioDescuento;
-
     const resultado2 = document.getElementById("Resultado2");
-    resultado2.innerText = "Ahorraste: $" + ahorro;
+    resultado.innerText = "El Precio a pagar es: ";
+    resultado2.innerText = " $" + precioDescuento;
+
+    const ahorros = document.getElementById("ahorro");
+    const ahorros2 = document.getElementById("ahorro2");
+    ahorros.innerText = "Ahorraste: ";
+    ahorros2.innerText = " $" + ahorro;
 }
 
 

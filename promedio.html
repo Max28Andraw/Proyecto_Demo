@@ -9,6 +9,9 @@
 </head>
 <body>
     <script src="./promedio.js"></script>
+    <script src="./media.js"></script>
+    <script src="./moda.js"></script>
+    
     <div class="menu">
         <a href="./index.html">
             <img class="iconos animacion" src="./casa.png" alt="">
@@ -37,15 +40,54 @@
     <section class="calculadora">
         <form>
             <label class="promedio" for="inputPromedio">Coloca la lista de números y oprime agregar  :</label>
-            <input class="input_Promedio" id="inputPromedio" type="number" placeholder="Lista">
-            <button class="button_Promedio animacion" type="button" onclick="pro()">Agregar</button>
-            <button class="button_Promedio animacion" type="button" onclick="calcularPromedio()">Calcular</button>
-
-            <div class="content_respuestas">
-                              
+            <div class="container_calculadora">
+                <div class="input_agregar">
+                    <input class="input_Promedio" id="inputPromedio" type="number" placeholder="Lista">
+                    <button class="agregar animacion" type="button" onclick="pro()">Agregar</button>
+                    <button class="agregar animacion" type="button" onclick="ordenar()">Ordenar</button>
+                </div>
+                <div class="container_buttons">
+                    <button class="buttons animacion" type="button" onclick="calcularPromedio()">Promedio</button>
+                    <button class="buttons animacion" type="button" onclick="calcularMedia()">Media</button>
+                    <button class="buttons animacion" type="button" onclick="moda()">Moda</button>
+                </div>
             </div>
             
+            
         </form>
+        <section class="lista" >
+            <ul class="padre" id="lista">
+                <p class="p">Lista agregados :</p>
+                
+            </ul>
+            <div>
+                <p class="p">Lista Ordenada :</p>
+                <ul class="padreOrder" id="padreOrder">
+                    
+                </ul> 
+            </div>
+            
+            
+            <div class="contentRes">
+                <div class="contentRes_Respuestas">
+                    <p class="respuesta" id="respuesta1Pro"></p>
+                    <p class="respuesta" id="respuestaPro"></p>
+                </div>
+
+                <div class="contentRes_Respuestas">
+                    <p class="respuesta" id="respuesta1Media"></p>
+                    <p class="respuesta" id="respuestaMedia"></p>
+                </div>
+
+                <div class="contentRes_Respuestas">
+                    <p class="respuesta" id="respuesta1Moda"></p>
+                    <p class="respuesta" id="respuestaModa"></p>
+                </div>
+                
+            </div>
+
+        </section>
     </section>
+    
 </body>
 </html>

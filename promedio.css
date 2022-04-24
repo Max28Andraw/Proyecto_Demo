@@ -91,7 +91,7 @@ form {
     display: flex;
     width: 700px;
     height: auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
     align-items: center;
     border: 0px;
@@ -106,29 +106,129 @@ form {
     margin: 20px;
     color: aliceblue;
 }
+.container_calculadora {
+    display: flex;
+}
+.input_agregar {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
 .input_Promedio {
     background-color: #61dff059;
     color: aliceblue;
     width: 130px;
-    height: 20px;
+    height: 30px;
     padding: 5px 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
     border: 10px;
 }
-.button_Promedio {
+.agregar {
     box-sizing: border-box;
     padding: 4px;
     background-color: #0a8ecd;
     color: aliceblue;
     border: 0cm;
     width: 150px;
-    height: 30px; 
-    margin: 5px 0px 20px 0px;   
+    height: 40px; 
+    margin: 10px 0px 0px 0px;   
     border-radius: 10px;
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
+}
+.container_buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.buttons {
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: #0a3ecd;
+    color: aliceblue;
+    border: 0cm;
+    width: 150px;
+    height: 40px; 
+    margin: 0px 0px 10px 0px;   
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.lista {
+    display: flex;
+    width: 700px;
+    height: auto;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    border: 0px;
+    border-radius: 10px;
+    background-color: #0c1633;
+    padding: 18px;
+    margin-left: 10px;
+}
+.padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: system-ui;
+    margin: 0px;
+    padding: 0px;
+}
+.p {
+    color: aliceblue;
+    font-size: 20px;
+    font-style: italic;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: system-ui;
+}
+.padreOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: system-ui;
+    margin: 0px;
+    padding: 0px;
+}
+.padre li{
+    padding-top: 5px;
+}
+.padreOrder li{
+    padding-top: 5px;
+}
+.contentRes {
+    display: flex;
+    flex-direction: column;
+}
+.contentRes_Respuestas {
+    display: flex;
+}
+.respuesta {
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1200px){
+    .calculadora{
+        flex-direction: column;
+    }
+    .lista {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
 }

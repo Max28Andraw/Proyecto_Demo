@@ -2,10 +2,11 @@
 
 
 
-function moda(lista1){
+function moda(){
+    const lista1 = lis;
     const lista = {};
 
-    lista1.map( function (elemento){
+    lista1.map( function (elemento){//Este metodo crea arrays con las veces que aparecedentro del objeto lista.
         if(lista[elemento]){
             lista[elemento] += 1;
         }else{
@@ -18,6 +19,13 @@ function moda(lista1){
     });
 
     const moda = listaArray[listaArray.length - 1];
+    const elnum = moda [0];
+    const lasvez = moda [1];
+    console.log(elnum);
     
-    return moda;
+    // return moda;
+    const resp1 =document.getElementById("respuesta1Moda");
+    const resp = document.getElementById("respuestaModa");
+    resp1.innerText = "La Moda es: "
+    resp.innerText = " " + elnum + " (" + lasvez + ")";
 }
